@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mel's Cooking</title>
+
+    <link rel = "icon" href = "https://p.kindpng.com/picc/s/36-361987_mels-cooking-logo-woman-cooking-png-transparent-png.png"  type = "image/x-icon">
+    <link rel="stylesheet" href="./Styling/loginsignup.css">
+    <link rel="stylesheet" href="./Styling/navbar.css">
+<style>
+    #links p:hover{
+        background-color: black;
+        transition: .5s;
+        color: goldenrod;
+        padding: 1.5%;
+        padding-bottom: 10%;
+    }
+</style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <a href="welcomepage.html"><img class="mel" src="https://p.kindpng.com/picc/s/36-361987_mels-cooking-logo-woman-cooking-png-transparent-png.png" alt=""></a>
+        </div>
+        <div id="searchbar">
+            <input id="searchinput" type="text" placeholder="Search">
+            <p><i class="fas fa-search"></i></p>
+        </div>
+        <div id="links">
+            
+            <p id="random">Home</p>
+            <p id="dayrecipe">Login/Signup</p>
+        </div>
+    </div>
+    <div class="login-page">
+        <div class="box">
+            <div class="left">
+                <h3>Create Account</h3>
+                <button type="button" class="register-btn">Register</button>
+            </div>
+            <div class="right">
+                <h3>Have an Account ?</h3>
+                <button type="button" class="login-btn">Login</button>
+            </div>
+            <div class="form">
+                 <!-- Login form Start -->
+                 <div class="login-form">
+                     <h3>Log In</h3>
+                 <form id="login-form" onsubmit="Login(event)">	  
+                     <div class="form-group">
+                         <input id="login-email" type="text" placeholder="Username*" class="form-control">
+                     </div>
+                     <div class="form-group">
+                         <input id="login-password" type="password" placeholder="Password*" class="form-control">
+                     </div>
+                     <div class="form-group">
+                         <label>
+                             <input type="checkbox"> Remember Me
+                         </label>
+                     </div>
+                     <input type="submit" value="Login" class="submit-btn"/>
+               </form>
+                     <p><a href="#" class="register-btn">Register</a>
+                 </div>
+                 <!-- Login form End -->
+   
+                <!-- Register form Start -->
+                 <div class="register-form form-hidden">
+                     <h3>Register</h3>
+               <form id="Register-form">
+                     <div class="form-group">
+                   
+                         <input id="name" type="text" placeholder="Name*" class="form-control">
+                     </div>
+                     <div class="form-group">
+                       <input id="email" type="text" id="register-email" placeholder="Email Address*" class="form-control">
+                   </div>
+                     <div class="form-group">
+                         <input id="user" type="text" placeholder="Username*" class="form-control">
+                     </div>
+                      
+                     <div class="form-group">
+                         <input type="password" id="password" placeholder="Password*" class="form-control">
+                     </div>
+                     <div class="form-group">
+                       <input type="number" id="mobile" placeholder="Mobile No.*" class="form-control">
+                   </div>
+                     
+                     <input onclick="Register(event)" type="submit" value="Register" class="submit-btn"/>
+               </form>
+                     <p><a href="#" class="login-btn">Login</a>
+                 </div>
+                 <!-- Register form End -->
+   
+            </div>
+        </div>
+    </div>
+   
+    <script src="./components/loginsignup.js"></script>
+   </body>
+</html>

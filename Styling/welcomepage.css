@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
+body{
+    background-color: rgb(246,246,246);
+    margin: 0% .5%;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,.25);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: goldenrod;
+
+}
+#list{
+    /* border-top: 1px solid darkgray; */
+    display: flex;
+    justify-content: space-evenly;
+}
+#list>div>p{
+    margin-top: 10%;
+    /* border: 2px dotted goldenrod; */
+    border-radius: 5px;
+    padding: 0px 10px 0px 5px;
+    /* background-color: white; */
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    color: gray;
+    font-family: 'Licorice', cursive;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* text-decoration: underline; */
+}
+#list>div>p:hover{
+    transition: .8s;
+    padding: 0px 10px 0px 5px;
+    background-color: black;
+    color: goldenrod;
+}
+.chefbutton,.showbutton,.recipebutton{
+    position: relative;
+    display: inline-block;
+}
+.chefsdrop,.showsdrop,.recipedrop{
+  display: none;
+  position: absolute;
+  background-color: rgb(246,246,246);
+  margin-left: -120px;
+  margin-top: -50%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+.recipedrop{
+    margin-left: -450px;
+}
+.showsdrop{
+    margin-left: -820px;
+}
+.chefbutton:hover .chefsdrop,.showbutton:hover .showsdrop,.recipebutton:hover .recipedrop{
+    display: block;
+    /* border: 1px solid teal; */
+}
+.cheflist,.showlist,.recipelist{
+    /* border: 1px solid blue; */
+    display: flex;
+    padding: 1%;
+    background-color: rgb(246,246,246);
+    border-radius: 10px;
+    width: 1000px;
+    height: 100%;
+    /* justify-content: space-evenly; */
+}
+.cheflist>div{
+    width: 100%;
+    margin-left: 1%;
+    /* border: 1px solid red; */
+}
+.cheflist>div>img{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid goldenrod;
+}
+
+.recipelist>div{
+    width: 100%;
+    margin-left: 1%;
+    /* border: 1px solid red; */
+}
+.recipelist>div>img{
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid goldenrod;
+}
+
+.showlist>div{
+    background-color: rgb(246,246,246);
+    width: 100%;
+    margin-left: 1%;
+    /* border: 1px solid red; */
+}
+.showlist>div>img{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+}
+
+.recipelist>div>p,.cheflist>div>p{
+    text-align: center;
+    font-size: 17px;
+    color: goldenrod;
+    cursor: pointer;
+    font-family: 'Merienda', cursive;
+}
+
+.cheflist>div:hover,.recipelist>div:hover{
+    transition: 1s;
+    background-color: black;
+}
+.showlist>div:hover{
+    transition: .7s;
+    transform: scale(1.05);
+}
+
+#box1{
+    margin: auto;
+    margin-top: -1%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* border: 1px solid red; */
+    grid-column-gap: 1%;
+}
+#box2{
+    margin: auto;
+    margin-top: 2%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* border: 1px solid red; */
+    grid-column-gap: 1%;
+}
+
+#box1>div,#box2>div{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    /* border: 1px solid teal; */
+    border-radius: 10px;
+}
+#box1>div>img,#box2>div>img{
+    width: 100%;
+    height: 65%;
+    cursor: pointer;
+    border-radius: 3%;
+}
+#box1>div>img:hover,#box2>div>img:hover{
+    transition: .7s;
+    transform: scale(1.05);
+}
+#box1>div>div{
+    height: 150px;
+}
+#box2>div>div{
+    height: 30%;
+}
+.first{
+    margin-left: 3%;
+    font-size: 22px;
+    cursor: pointer;
+    color: tomato;
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+}
+.second{
+    margin-left: 3%;
+    font-size: 19px;
+    cursor: pointer;
+    color: grey;
+    font-family: 'Patrick Hand', cursive;
+}
+.first:hover{
+    transition: .51s;
+    color: goldenrod;
+    padding: 1px;
+    /* background-color: black; */
+}
+.second:hover{
+    color: teal;
+    text-decoration: underline;
+}
+.quick{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-family: 'Merienda', cursive;
+    color: grey;   
+}
+#box3{
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+#box3>img{
+    flex: 4;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;   
+    border-radius: 10px;
+    height: 100%;
+}
+#box3>div{
+    flex: 2;
+    margin-left: 4%;
+    margin-top: 8%;
+}
+.firsthead{
+    font-size: 20px;
+    font-family: 'Patrick Hand', cursive;
+    color: tomato;
+    font-weight: bold;
+    cursor: pointer;
+}
+.firsthead:hover{
+    color: goldenrod;
+    transition: .51s;
+    padding: 2px;
+}
+.secondhead{
+    font-size: 35px;
+    font-family: 'Patrick Hand', cursive;
+    color: grey;
+    font-weight: bold;
+    cursor: pointer;
+}
+.secondhead:hover{
+    transition: .8s;
+    color: teal;
+    padding: 2px;
+}

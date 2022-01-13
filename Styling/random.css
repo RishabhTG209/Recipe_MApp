@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+#result{
+    /* border: 1px solid red; */
+    /* display: flex; */
+    margin: 4% 0%;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,.25);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: goldenrod;
+
+}
+.divphotoname{
+    display: flex;
+    justify-content: space-evenly;
+}
+.divbox{
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.nativeplace,.category,.dish{
+    font-size: 22px;
+    color: gray;
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+}
+.native,.cat,.name{
+    font-weight: bold;
+    font-size: 27px;
+    font-family: 'Merienda', cursive;
+    color: goldenrod;
+}
+.name{
+    font-size: 40px;
+}
+.name:hover{
+    color: tomato;
+    transition: 1s;
+    transform: scale(1.05);
+}
+.divname{
+    line-height: 10px;
+}
+.divcat{
+    margin-top: 15%;
+    line-height: 10px;
+}
+.divnative{
+    margin-top: 15%;
+    line-height: 10px;
+}
+.ytvideo{
+    width: 50%;
+    height: 550px;
+    margin-left: 25%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.dishphoto{
+    margin-top: 4%;
+    width: 30%;
+    height: 300px;
+    box-shadow: black 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgba(0, 0, 0,.7) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgba(35, 35, 35,.5) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgba(50, 50, 50,.3) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgba(80, 80, 80,.1) 40px -40px;
+    cursor: pointer;
+}
+.dishphoto:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+.divsource{
+    margin-top: 3%;
+    font-size: 23px;
+    text-align: center;
+    line-height: 10px;
+    font-family: 'Patrick Hand', cursive;
+    color: grey;
+}
+.sourcelink{
+    cursor: pointer;
+    font-size: 27px;
+    text-decoration: underline;
+    color: teal;
+}
+.sourcelink:hover{
+    color: tomato;
+    transition: .5s;
+    transform: scale(1.05);
+
+}
+.instruction{
+    color: rgb(143, 140, 140);
+    margin:2% 2%;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    font-weight: bold;
+}

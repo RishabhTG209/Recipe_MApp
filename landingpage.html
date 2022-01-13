@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mel's Cooking</title>
+
+    <link rel = "icon" href = "https://p.kindpng.com/picc/s/36-361987_mels-cooking-logo-woman-cooking-png-transparent-png.png"  type = "image/x-icon">
+
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="./Styling/navbar.css">
+    <link rel="stylesheet" href="./Styling/debouncing.css">
+    <link rel="stylesheet" href="./Styling/landingpage.css">
+</head>
+<body>
+   <div id="main"></div>
+   <div id="check"></div>
+   <div id="container"></div>
+</body>
+</html>
+<script src="./components/debouncing.js"></script>
+<script src="./components/landingpage.js"></script>
+
+<script type="module">
+
+import navbar from "./components/navbar.js";
+    console.log("navbar: ",navbar);
+    
+    document.querySelector("#main").innerHTML=navbar();
+    let random=document.querySelector("#random");
+    random.addEventListener("click",function(){
+        window.location.href="random.html"
+    });
+    let recipeofday=document.querySelector("#dayrecipe");
+    recipeofday.addEventListener("click",function(){
+        window.location.href="latest.html"
+    })
+    let landing=document.querySelector("#landing");
+        landing.addEventListener("click",function(){
+            window.location.href="landingpage.html"
+        })
+
+    let searchinput=document.querySelector("#searchinput");
+        searchinput.addEventListener("input",function(){
+            debounce(searchrecipe,1000);
+        })
+
+
+</script>

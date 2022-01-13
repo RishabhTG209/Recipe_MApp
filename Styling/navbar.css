@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+body{
+    margin: 0% 0.1%;
+    background-color: rgb(246,246,246);
+}
+#username{
+    font-size: 20px;
+    border: 1px solid red;
+    height: 10px;
+}
+#navbar{
+    /* border: 1px solid black; */
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: rgb(246,246,246);
+}
+#logo{
+    width: 25%;
+    /* border: 1px solid goldenrod; */
+    display: flex;
+    justify-content: center;
+}
+#logo a{
+    text-align: center;
+}
+#logo a img{
+    /* border: 1px solid red; */
+    width: 65%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+#searchbar{
+    width: 48%;
+    /* border:1px solid teal; */
+    display: flex;
+    /* justify-content: space-between; */
+}
+#searchbar input{
+    width: 85%;
+    height: 35%;
+    margin-top: 5%;
+    border: none;
+    background-color: rgb(246,246,246);
+    color: black;
+    font-weight: bold;
+    border-bottom:1px solid grey;
+    font-size: 25px;
+    font-family: 'Merienda', cursive;
+}
+#searchbar p{
+    margin-top: 6%;
+    font-size: 2rem;
+    color: grey;
+    margin-left: 1%;
+    cursor: pointer;
+}
+#links{
+    width: 45%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+}
+#links p{
+    font-size: 2.2rem;
+    margin-top: 6%;
+    height: 20%;
+    color: grey;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Licorice', cursive;
+}
+#links p:hover{
+    background-color: black;
+    transition: .5s;
+    color: goldenrod;
+    padding: 0% 2% 2% 2% ;
+}

@@ -5,7 +5,7 @@ loginsignup.addEventListener("click",function(){
 
 let home=document.querySelector("#random");
 home.addEventListener("click",function(){
-    window.location.href="welcomepage.html"
+    window.location.href="index.html"
 })
 
 let recipelist=document.querySelector(".recipelist");

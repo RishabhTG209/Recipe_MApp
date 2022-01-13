@@ -62,26 +62,26 @@ async function Register(e){
 
         register_detail=JSON.stringify(register_detail);
         console.log("Register detail:",register_detail)
+
+        let reg_api=`https://masai-api-mocker.herokuapp.com/auth/register`
+        let response=await fetch(reg_api,{
+            method:'POST',
+            body: register_detail,
+            headers:{
+                "Content-Type": "application/json",
+            },
+        });
+        let data=await response.json();
+        if(data.error==false){
+            alert("Registration Successfull, Now Please Login with Username & Password");
+        }
+        console.log("register Data :",data);
     }
     catch(error){
+        alert("Username Already Exist, Please Enter the Details again.")
         console.log("Error:",error);
     }
-    let reg_api=`https://masai-api-mocker.herokuapp.com/auth/register`
-    let response=await fetch(reg_api,{
-        method:'POST',
-        body: register_detail,
-        headers:{
-            "Content-Type": "application/json",
-        },
-    });
-    let data=await response.json();
-    if(data.error==true){
-        alert("Username Already Exist, Please Enter the Details again.")
-    }
-    else if(data.error==false){
-        alert("Registration Successfull, Now Please Login with Username & Password");
-    }
-    console.log("register Data :",data);
+    
 }
 
 async function Login(e){
@@ -103,10 +103,7 @@ async function Login(e){
             },
         });
         let data1=await response1.json();
-        if(data1.error==true){
-            alert("Invalid Credential, Please Try Again.")
-        }
-        else{
+        if(data1.error==false){
             alert("Login Successfull.")
         }
         let token=data1.token;
@@ -115,6 +112,7 @@ async function Login(e){
         console.log("Data1 : ",data1);
     }
     catch(error){
+        alert("Invalid Credential, Please Try Again.")
         console.log("Error Login:",error);
     }
 }

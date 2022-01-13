@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="./Styling/navbar.css">
     <link rel="stylesheet" href="./Styling/random.css">
     <link rel="stylesheet" href="./Styling/debouncing.css">
+    <style>
+        .mel{
+            margin-top: -10%;
+        }
+        #searchbar{
+            margin-top: -2%;
+        }
+    </style>
 </head>
 <body>
    <div id="main"></div>
@@ -45,5 +53,10 @@ import navbar from "./components/navbar.js";
         searchinput.addEventListener("input",function(){
             debounce(searchrecipe,1000);
         })
-    
+        let userdata= JSON.parse(localStorage.getItem("userdata"))||[];
+        console.log(userdata);
+
+        let useranme=document.querySelector("#username");
+        useranme.textContent=`Hello, ${userdata.name}`;
+        username.setAttribute("class","user");
 </script>

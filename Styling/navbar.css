@@ -1,12 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
 body{
     margin: 0% 0.1%;
     background-color: rgb(246,246,246);
 }
-#username{
+#rightmenu{
+    position: relative;
+    display: inline-block;
+    margin-left: 80%;
+}
+#dropdown{
+    display: none;
+    position: absolute;
+    z-index: 5;
+    margin-left: 65%;
+    margin-top: -1%;
     font-size: 20px;
-    border: 1px solid red;
-    height: 10px;
+}
+#dropdown a:hover{
+    transition: 1s;
+    padding: 2px;
+    color: tomato;
+}
+#rightmenu:hover #dropdown{
+    display: block;
+}
+.user{
+    text-align: right;
+    font-size: 22px;
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
+    color: goldenrod;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.user:hover{
+    color: tomato;
+    padding: 1px;
+    transition: 1s;
 }
 #navbar{
     /* border: 1px solid black; */
@@ -25,14 +57,15 @@ body{
 }
 #logo a img{
     /* border: 1px solid red; */
-    width: 65%;
-    margin-top: 2%;
+    width: 75%;
+
     cursor: pointer;
 }
 #searchbar{
     width: 48%;
     /* border:1px solid teal; */
     display: flex;
+    margin-top: -1%;
     /* justify-content: space-between; */
 }
 #searchbar input{
@@ -62,8 +95,8 @@ body{
     margin-left: auto;
 }
 #links p{
-    font-size: 2.2rem;
-    margin-top: 6%;
+    font-size: 35px;
+    margin-top: 4.5%;
     height: 20%;
     color: grey;
     font-weight: bold;

@@ -75,6 +75,12 @@ async function Register(e){
         },
     });
     let data=await response.json();
+    if(data.error==true){
+        alert("Username Already Exist, Please Enter the Details again.")
+    }
+    else if(data.error==false){
+        alert("Registration Successfull, Now Please Login with Username & Password");
+    }
     console.log("register Data :",data);
 }
 
@@ -97,9 +103,37 @@ async function Login(e){
             },
         });
         let data1=await response1.json();
+        if(data1.error==true){
+            alert("Invalid Credential, Please Try Again.")
+        }
+        else{
+            alert("Login Successfull.")
+        }
+        let token=data1.token;
+        let username=document.querySelector("#login-email").value;
+        getUser(username,token);
         console.log("Data1 : ",data1);
     }
     catch(error){
         console.log("Error Login:",error);
     }
+}
+
+async function getUser(username,token){
+    let user_api=`https://masai-api-mocker.herokuapp.com/user/${username}`;
+    let response=await fetch(user_api,{
+        headers:{
+            "Content-Type" : "application/json",
+            Authorization: `Bearer ${token}`
+        },
+    });
+    let data=await response.json();
+    sendData(data);
+    console.log("hey New Baby:",data);
+}
+
+
+function sendData(object){
+    localStorage.setItem("userdata",JSON.stringify(object));
+    window.location.href="clonewelcome.html"
 }

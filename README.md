@@ -7,14 +7,13 @@ The main motive for creating this project is to use different kinds of functiona
 - API to POST & GET request of particular User.
 - Import and Export Functions for Navbar
 
-![alt text](https://github.com/RishabhTG209/KOOVS_Clone/blob/main/Screenshots/Koovs1.JPG?raw=true)
-![alt text](https://github.com/RishabhTG209/KOOVS_Clone/blob/main/Screenshots/koovs2.JPG?raw=true)
-![alt text](https://github.com/RishabhTG209/KOOVS_Clone/blob/main/Screenshots/Koovs1.JPG?raw=true)
-![alt text](https://github.com/RishabhTG209/KOOVS_Clone/blob/main/Screenshots/koovs2.JPG?raw=true)
-![alt text](https://github.com/RishabhTG209/KOOVS_Clone/blob/main/Screenshots/Koovs1.JPG?raw=true)
-![alt text](https://github.com/RishabhTG209/KOOVS_Clone/blob/main/Screenshots/koovs2.JPG?raw=true)
-![alt text](https://github.com/RishabhTG209/KOOVS_Clone/blob/main/Screenshots/Koovs1.JPG?raw=true)
-![alt text](https://github.com/RishabhTG209/KOOVS_Clone/blob/main/Screenshots/koovs2.JPG?raw=true)
+![alt text](https://github.com/RishabhTG209/Recipe_MApp/blob/main/Mels/mels1.JPG?raw=true)
+![alt text](https://github.com/RishabhTG209/Recipe_MApp/blob/main/Mels/mels2.JPG?raw=true)
+![alt text](https://github.com/RishabhTG209/Recipe_MApp/blob/main/Mels/mels3.JPG?raw=true)
+![alt text](https://github.com/RishabhTG209/Recipe_MApp/blob/main/Mels/mels4.JPG?raw=true)
+![alt text](https://github.com/RishabhTG209/Recipe_MApp/blob/main/Mels/mels5.JPG?raw=true)
+![alt text](https://github.com/RishabhTG209/Recipe_MApp/blob/main/Mels/mels6.JPG?raw=true)
+
 
 Deployment Link : https://rishabhtg209.github.io/Recipe_MApp/
 
